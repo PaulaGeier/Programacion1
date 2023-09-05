@@ -7,7 +7,7 @@ while num!=0:
     proceso=num;
     while proceso>0:
         digito=proceso%10
-        if digito%2==0:
+        if digito%2 ==0:
             pares+=1
         else:
             impares+=1
