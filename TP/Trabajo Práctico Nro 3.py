@@ -24,8 +24,8 @@ print(odd_list)
 number = int(input("Ingrese un numero entero positivo: "))
 list = []
 while number >= 0:
- list.append(number)
- number = number - 1
+  list.append(number)
+  number = number - 1
 print(list)
 
 #EJERCIIO 5
@@ -34,7 +34,16 @@ anual_int = int(input("Ingrese el interés anual: "))
 total_years = int(input("Ingrese la cantidad de años: "))
 
 years = 1
-gains = 0
+gains_t = 0
+
+while years <= total_years:
+    parcial_gains = 0
+    gains_t = gains_t + (to_invert * (anual_int / 100))
+    parcial_gains = parcial_gains + (to_invert * (anual_int / 100))
+    to_invert += parcial_gains
+    print(f"Las ganacias del año {years} son: ${gains_t}")
+    print(f"Este año, en total tiene: ${to_invert}\n")
+    years = years + 1
 
 while years <= total_years:
     gains = gains + (to_invert * (anual_int / 100))
