@@ -70,7 +70,10 @@ print(f'Numero ingresados:{numbers}')
 print(f'Numeros primos:{number_prime}')
 
 #EJERCICIO 5
-
+year= int(input("Ingresar un año:"))
+for n in range(year+1):
+    if year%4==0 and year%10==0 and year%100!=0:
+        print(n)
 
 #EJERCICIO 6
 for i in range(1,21):
