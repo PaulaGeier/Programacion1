@@ -14,7 +14,6 @@ elif year_pc < 0:
 else:
     print("Su computador es viejo")
 
-
 #EJERCICIO 3
 nombres=input("ingrese ambos nombres separados:")
 nombres_separados=nombres.split(" ")
