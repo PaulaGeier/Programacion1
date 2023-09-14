@@ -1,5 +1,5 @@
 abecedario = 'abcdefghijklmnñopqrstuvwxyz'
-corrimiento = int(input('Corrimiento:'))
+corrimiento = int(input('Ingresar el numero de corrimiento:'))
 mensaje_encriptado = ''
 for i in range(5):
   print(f'Mensaje para oficial {i+1}')

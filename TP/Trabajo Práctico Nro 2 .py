@@ -7,26 +7,29 @@ else:
 
 #EJERCICIO 2
 year_pc = int(input("Ingrese los años de su computador: "))
-if (year_pc <= 2) and (year_pc >= 0) :
+if (year_pc<=2) and (year_pc>=0) :
     print("Su computador es nuevo")
 elif year_pc < 0:
     print("Error de entrada ")
 else:
     print("Su computador es viejo")
 
+
 #EJERCICIO 3
-nombres=input("ingrese ambos nombres separados  ")
+nombres=input("ingrese ambos nombres separados:")
 nombres_separados=nombres.split(" ")
 nombre1=nombres_separados[0]
 nombre2 = nombres_separados[1]
-
+nombre1=nombre1.upper()
+nombre2=nombre2.upper()
 if (nombre1[0] == nombre2[0]):
     print("hay concidencia")
 else:
     print("no hay concidencia")
 
 #EJERCICIO 4
-voto = input("Ingrese a que candidato va a votar: ")
+print("CANDIDATOS\na)Candidato por el partido rojo\nb)Candidato por el partido verdad\nc)Candidato por el partido azul")
+voto = input("Ingrese a que candidato va a votar(a,b o c): ")
 voto = voto.lower()
 if voto == "a":
     print("Usted a votado por el partido ROJO")
@@ -58,13 +61,12 @@ print("Ingresar tres números")
 a = int(input("a= "))
 b = int(input("b= "))
 c = int(input("c= "))
-print("El número mas grande es")
-max = a
-if b> max:
-    max = b
-if c>max:
-    max=c
-print(max)
+min = a
+if b< min:
+    min = b
+if c<min:
+    min=c 
+print(f"El número mas pequeño es {min}")
 
 #EJERCICIO 8
 user = input("Ingrese su usuario: ")
@@ -79,9 +81,11 @@ else:
 #EJERCICIO 9
 nombre = input('Ingresa tu nombre: ')
 sexo = input('Ingresa tu sexo (Masculino/Femenino): ')
-if(sexo ==  'Femenino' or sexo == 'Masculino'):
+sexo=sexo.upper()
+nombre=nombre.upper()
+if(sexo ==  'FEMENINO' or sexo == 'MASCULINO'):
 
-    if((sexo == 'Femenino') and (nombre[0]< 'M') or ((sexo == 'Masculino') and (nombre[0] > 'N'))):
+    if((sexo == 'FEMENINO') and (nombre[0]< 'M') or ((sexo == 'MASCULINO') and (nombre[0] > 'N'))):
         print('Perteneces al grupo A')
     else:
         print('Perteneces algrupo B')
@@ -165,7 +169,7 @@ b=input("b=")
 
 if a==0 and b!=0:
     print("No hay solución")
-elif a!=0 and b== "-x":
+elif a==0 and b==0:
     print("infinitas soluciones")
 elif a!=0 :
     b=int(b)
@@ -196,7 +200,10 @@ elif operacion == 2:
 elif operacion == 3:
     print(a - b)
 elif operacion == 4:
-    print(a / b)
+    if b!=0:
+        print(a / b)
+    else:
+        print("No se puede dividir por 0")
 else:
     print("Error ")
 #EJERCICIO 17 
