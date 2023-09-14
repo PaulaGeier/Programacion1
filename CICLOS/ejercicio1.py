@@ -7,10 +7,11 @@ for i in range(5):
   mensaje = mensaje.lower()
   mensaje_encriptado=''
   for l in mensaje:
-    if l==' ':
-      mensaje_encriptado+=' '
-    else:
+
+    if l in abecedario:
       posicion = abecedario.index(l)
       letra = abecedario[(posicion + corrimiento)%27]
       mensaje_encriptado += letra
+    else:
+      mensaje_encriptado+=l
   print(mensaje_encriptado)
