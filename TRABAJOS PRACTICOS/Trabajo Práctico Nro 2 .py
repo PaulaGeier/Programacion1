@@ -176,6 +176,7 @@ elif a!=0 :
     print("la solución es x= ", x)
 
 #EJERCICIO 15
+import math
 operacion=input("desea saer el area de un triangulo(t) o de un circulo(c) ").lower()   #b*a/2
 if (operacion == "c"):
     r=int(input("escriba el radio del circulo"))
