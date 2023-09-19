@@ -1,7 +1,6 @@
 #Correccion: cambiar (a,b) por (x,y)
 def most(x,y):
-    return x 
-    if(x,y):
+    if(x>y):
         return x
     else:
         return y
