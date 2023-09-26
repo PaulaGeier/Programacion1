@@ -3,7 +3,6 @@ import funciones
 list1=['manzana','naranja','sandia', 'frutilla', 'uva','melon']
 attempts=5
 secret_word=random.choice(list1)#Se elige una palabra de forma aleatoria 5
-print(secret_word)
 number_of_letters=len(secret_word)
 print("ADIVINE LA PALABRA")
 without_guessing=[]#Creacion de una lista para almacenar las letras en contradas y las faltantes por encontrar 
