@@ -16,7 +16,7 @@ def addresses(shopping):
     return addresses_without_repeating
 
 def clients(shopping):
-    clients=[]
+    clients=[] 
     for n in range(len(shopping)):
         clients.append((shopping[n])[0])
     clients_without_repeating=[]
